@@ -1,5 +1,5 @@
 
-// COS30008, 2024
+// COS30008, tutorial 3, 2024
 
 #define _USE_MATH_DEFINES     // must be defined before any #include  
 #include "Vector2D.h"
@@ -9,10 +9,7 @@
 Vector2D::Vector2D( float aX, float aY ) noexcept :
     fX(aX),
     fY(aY)
-
-{
-    
-}
+{}
 
 Vector2D Vector2D::operator+( const Vector2D& aOther ) const noexcept
 {
@@ -27,6 +24,11 @@ Vector2D Vector2D::operator-( const Vector2D& aOther ) const noexcept
 Vector2D Vector2D::operator*( const float aScalar ) const noexcept
 {
     return Vector2D( x() * aScalar, y() * aScalar );
+}
+
+Vector2D operator*( const float aScalar, const Vector2D& aVector ) noexcept
+{
+    return aVector * aScalar;
 }
 
 float Vector2D::dot( const Vector2D& aOther ) const noexcept
@@ -72,10 +74,7 @@ std::istream& operator>>( std::istream& aIStream, Vector2D& aVector )
 
 std::ostream& operator<<( std::ostream& aOStream, const Vector2D& aVector )
 {
-    return aOStream << "[" << round( aVector.fX ) << "," << round( aVector.fY ) << "]";
+    return aOStream << "[" << round( aVector.fX * 1000.0f ) / 1000.0f << "," << round( aVector.fY * 1000.0f ) / 1000.0f << "]";
 }
 
-Vector2D operator*( const float aScalar, const Vector2D& aVector ) noexcept
-{
-    return aVector * aScalar;
-}
+
