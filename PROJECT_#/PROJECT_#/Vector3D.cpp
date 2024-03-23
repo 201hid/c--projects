@@ -44,6 +44,7 @@ std::ostream& operator<<( std::ostream& aOStream, const Vector3D& aVector )
     return aOStream << "[" << round( aVector.fBaseVector.x() * 1000.0f ) / 1000.0f << "," << round( aVector.fBaseVector.y() * 1000.0f ) / 1000.0f <<"," << round( aVector.w() * 1000.0f ) / 1000.0f << "]";
 }
 
+
 Vector3D Vector3D::operator*( const float aScalar ) const noexcept
 {
     return Vector3D(fBaseVector.x() * aScalar,fBaseVector.y() * aScalar, w()* aScalar );
