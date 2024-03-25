@@ -77,17 +77,12 @@ Polygon Polygon::  scale( float aScalar ) const noexcept
     int i ;
     Vector2D vector;
     Polygon Result = *this;
-    
-    for (i = 0; i < fNumberOfVertices  ; i++)
-        
+        for (i = 0; i < fNumberOfVertices  ; i++)
     {
         int next_index = (i +1)% fNumberOfVertices;
         vector = fVertices[i] * aScalar ;
         Result.fVertices[i] = vector;
         std::cout<<Result.fVertices[i];
-
     }
-    
     return Result;
-    
-}
+    }

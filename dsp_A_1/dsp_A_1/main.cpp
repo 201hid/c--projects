@@ -9,8 +9,8 @@
 using namespace std;
 
 #define P1
-//#define P2
-//#define P3
+#define P2
+#define P3
 
 size_t gCount = 0;
 
@@ -53,18 +53,18 @@ void runP2()
     cout << M * M << endl;
 
     // test determinate
-
+//
     cout << "det M = " << M.det() << endl;
-
+//
     // test hasInverse
-    
+//    
     cout << "Has M an inverse? " << (M.hasInverse() ? "Yes" : "No") << endl;
-
+//
     // test transpose
     cout << "transpose of M:" << endl;
     cout << M.transpose() << endl;
-
-    // test inverse
+//
+//    // test inverse
     cout << "inverse of M:" << endl;
     cout << M.inverse() << endl;
 

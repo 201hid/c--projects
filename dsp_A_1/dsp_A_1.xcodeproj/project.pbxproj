@@ -10,6 +10,8 @@
 		3638798B2BAE5F36008E3399 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3638798A2BAE5F36008E3399 /* main.cpp */; };
 		363879952BAE60EF008E3399 /* Vector2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 363879912BAE60EF008E3399 /* Vector2D.cpp */; };
 		363879962BAE60EF008E3399 /* Vector3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 363879932BAE60EF008E3399 /* Vector3D.cpp */; };
+		363879992BAE8BC7008E3399 /* Matrix3x3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 363879982BAE8BC7008E3399 /* Matrix3x3.cpp */; };
+		3638799E2BB03C70008E3399 /* Polygon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3638799B2BB03C70008E3399 /* Polygon.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,12 @@
 		363879922BAE60EF008E3399 /* Vector2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2D.h; sourceTree = "<group>"; };
 		363879932BAE60EF008E3399 /* Vector3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector3D.cpp; sourceTree = "<group>"; };
 		363879942BAE60EF008E3399 /* Vector3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3D.h; sourceTree = "<group>"; };
+		363879972BAE8BC7008E3399 /* Matrix3x3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix3x3.h; sourceTree = "<group>"; };
+		363879982BAE8BC7008E3399 /* Matrix3x3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix3x3.cpp; sourceTree = "<group>"; };
+		3638799A2BB03C6F008E3399 /* Data .txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Data .txt"; sourceTree = "<group>"; };
+		3638799B2BB03C70008E3399 /* Polygon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Polygon.cpp; sourceTree = "<group>"; };
+		3638799C2BB03C70008E3399 /* Parallelogram.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Parallelogram.txt; sourceTree = "<group>"; };
+		3638799D2BB03C70008E3399 /* Polygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Polygon.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +71,17 @@
 		363879892BAE5F36008E3399 /* dsp_A_1 */ = {
 			isa = PBXGroup;
 			children = (
+				363879972BAE8BC7008E3399 /* Matrix3x3.h */,
+				363879982BAE8BC7008E3399 /* Matrix3x3.cpp */,
 				363879912BAE60EF008E3399 /* Vector2D.cpp */,
 				363879922BAE60EF008E3399 /* Vector2D.h */,
 				363879932BAE60EF008E3399 /* Vector3D.cpp */,
 				363879942BAE60EF008E3399 /* Vector3D.h */,
 				3638798A2BAE5F36008E3399 /* main.cpp */,
+				3638799A2BB03C6F008E3399 /* Data .txt */,
+				3638799C2BB03C70008E3399 /* Parallelogram.txt */,
+				3638799B2BB03C70008E3399 /* Polygon.cpp */,
+				3638799D2BB03C70008E3399 /* Polygon.h */,
 			);
 			path = dsp_A_1;
 			sourceTree = "<group>";
@@ -130,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				363879952BAE60EF008E3399 /* Vector2D.cpp in Sources */,
+				3638799E2BB03C70008E3399 /* Polygon.cpp in Sources */,
+				363879992BAE8BC7008E3399 /* Matrix3x3.cpp in Sources */,
 				3638798B2BAE5F36008E3399 /* main.cpp in Sources */,
 				363879962BAE60EF008E3399 /* Vector3D.cpp in Sources */,
 			);
