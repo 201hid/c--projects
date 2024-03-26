@@ -67,8 +67,5 @@ int main()
     std::cout << "Rotate " << b3 << " by " << 90.0f << " degrees = " << lRotate * b3 << std::endl;
     std::cout << "Translate " << c3 << " by " << lTranslate.column( 2 ) << " = " << lTranslate * c3 << std::endl;
     std::cout << "Translate " << d3 << " by " << lTranslate.column( 2 ) << " = " << lTranslate * d3 << std::endl;
-    
-
-
     return 0;
 }

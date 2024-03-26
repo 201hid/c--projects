@@ -12,6 +12,9 @@
 		363879962BAE60EF008E3399 /* Vector3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 363879932BAE60EF008E3399 /* Vector3D.cpp */; };
 		363879992BAE8BC7008E3399 /* Matrix3x3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 363879982BAE8BC7008E3399 /* Matrix3x3.cpp */; };
 		3638799E2BB03C70008E3399 /* Polygon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3638799B2BB03C70008E3399 /* Polygon.cpp */; };
+		363879AF2BB2E43F008E3399 /* Matrix3x3_PS1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 363879AC2BB2E43F008E3399 /* Matrix3x3_PS1.cpp */; };
+		363879B02BB2E43F008E3399 /* Polygon_PS1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 363879AD2BB2E43F008E3399 /* Polygon_PS1.cpp */; };
+		363879B12BB2E43F008E3399 /* Vector3D_PS1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 363879AE2BB2E43F008E3399 /* Vector3D_PS1.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,10 +38,13 @@
 		363879942BAE60EF008E3399 /* Vector3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3D.h; sourceTree = "<group>"; };
 		363879972BAE8BC7008E3399 /* Matrix3x3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix3x3.h; sourceTree = "<group>"; };
 		363879982BAE8BC7008E3399 /* Matrix3x3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix3x3.cpp; sourceTree = "<group>"; };
-		3638799A2BB03C6F008E3399 /* Data .txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Data .txt"; sourceTree = "<group>"; };
 		3638799B2BB03C70008E3399 /* Polygon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Polygon.cpp; sourceTree = "<group>"; };
 		3638799C2BB03C70008E3399 /* Parallelogram.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Parallelogram.txt; sourceTree = "<group>"; };
 		3638799D2BB03C70008E3399 /* Polygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Polygon.h; sourceTree = "<group>"; };
+		3638799F2BB289D1008E3399 /* Data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Data.txt; sourceTree = "<group>"; };
+		363879AC2BB2E43F008E3399 /* Matrix3x3_PS1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix3x3_PS1.cpp; sourceTree = "<group>"; };
+		363879AD2BB2E43F008E3399 /* Polygon_PS1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Polygon_PS1.cpp; sourceTree = "<group>"; };
+		363879AE2BB2E43F008E3399 /* Vector3D_PS1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector3D_PS1.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +84,13 @@
 				363879932BAE60EF008E3399 /* Vector3D.cpp */,
 				363879942BAE60EF008E3399 /* Vector3D.h */,
 				3638798A2BAE5F36008E3399 /* main.cpp */,
-				3638799A2BB03C6F008E3399 /* Data .txt */,
 				3638799C2BB03C70008E3399 /* Parallelogram.txt */,
+				3638799F2BB289D1008E3399 /* Data.txt */,
 				3638799B2BB03C70008E3399 /* Polygon.cpp */,
 				3638799D2BB03C70008E3399 /* Polygon.h */,
+				363879AC2BB2E43F008E3399 /* Matrix3x3_PS1.cpp */,
+				363879AD2BB2E43F008E3399 /* Polygon_PS1.cpp */,
+				363879AE2BB2E43F008E3399 /* Vector3D_PS1.cpp */,
 			);
 			path = dsp_A_1;
 			sourceTree = "<group>";
@@ -147,6 +156,9 @@
 				3638799E2BB03C70008E3399 /* Polygon.cpp in Sources */,
 				363879992BAE8BC7008E3399 /* Matrix3x3.cpp in Sources */,
 				3638798B2BAE5F36008E3399 /* main.cpp in Sources */,
+				363879AF2BB2E43F008E3399 /* Matrix3x3_PS1.cpp in Sources */,
+				363879B02BB2E43F008E3399 /* Polygon_PS1.cpp in Sources */,
+				363879B12BB2E43F008E3399 /* Vector3D_PS1.cpp in Sources */,
 				363879962BAE60EF008E3399 /* Vector3D.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
