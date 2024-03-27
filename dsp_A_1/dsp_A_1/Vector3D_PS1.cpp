@@ -1,46 +1,37 @@
-
-// COS30008, tutorial 3, 2024
-
 #include "Vector3D.h"
-#include <iomanip> // Include for std::setprecision
+#include <iomanip>
 #include <sstream>
-#include <cassert>
 #include <cmath>
 
-
+#include <sstream>
+#include <cmath>
+#include <iomanip>
 
 std::string Vector3D::toString() const noexcept {
-    std::ostringstream stream;
-    stream << "[";
+    std::ostringstream lStream;
+    lStream << "[";
 
-    // A lambda function to format a single component based on its value
-    auto formatcordinate = [&stream](float cordinate) {
-        if (std::floor(cordinate) == cordinate) {
-            // cordinate is an integer, output without decimal point
-            stream << static_cast<int>(cordinate);
+    auto lFormatCoordinate = [&lStream](float aCoordinate) {
+        std::stringstream ltempStream;
+        if (std::floor(aCoordinate) == aCoordinate) {
+            lStream << static_cast<int>(aCoordinate);
         } else {
-            // cordinate is not an integer
-            if (std::abs(cordinate) < 10000) {
-                // For non-integer values less than 10000, show up to 4 decimal places
-                stream << std::fixed << std::setprecision(4) << cordinate;
-            } else {
-                // For values 10000 or above, show only 1 decimal place
-                stream << std::fixed << std::setprecision(1) << cordinate;
+            ltempStream << std::fixed << std::setprecision((std::abs(aCoordinate) < 10000) ? 4 : 1) << aCoordinate;
+            std::string str = ltempStream.str();
+            str.erase(str.find_last_not_of('0') + 1, std::string::npos);
+            if (str.back() == '.') {
+                str.pop_back();
             }
+            lStream << str;
         }
     };
 
-    // Format and append each component of the vector to the stream
-    formatcordinate(x());
-    stream << ",";
-    formatcordinate(y());
-    stream << ",";
-    formatcordinate(w());
+    lFormatCoordinate(x());
+    lStream << ",";
+    lFormatCoordinate(y());
+    lStream << ",";
+    lFormatCoordinate(w());
 
-    stream << "]";
-
-    return stream.str();
+    lStream << "]";
+    return lStream.str();
 }
-
-
-

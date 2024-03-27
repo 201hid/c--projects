@@ -1,37 +1,20 @@
-
-// COS30008, Tutorial 2, 2023
-
 #include "Polygon.h"
-
 #include <cassert>
 
-
-
-float Polygon ::getSignedArea() const noexcept
-{
-    float area = 0.0f;
+float Polygon::getSignedArea() const noexcept {
+    float lArea = 0.0f;
     for (int i = 0; i < fNumberOfVertices; i++) {
-        int nextvertice = (i + 1) % fNumberOfVertices; // For xi+1 and yi+1, with wrap-around
-        area += (fVertices[i].y() + fVertices[nextvertice].y()) * (fVertices[i].x() - fVertices[nextvertice].x());
+        int lNextVertex = (i + 1) % fNumberOfVertices;
+        lArea += (fVertices[i].y() + fVertices[lNextVertex].y()) * (fVertices[i].x() - fVertices[lNextVertex].x());
     }
-    return area / 2.0f; // The formula divides the total by 2
+    return lArea / 2.0f;
 }
 
-Polygon Polygon :: transform( const Matrix3x3& aMatrix ) const noexcept
-{
-    Vector3D vector3D;
-    Polygon Result = *this;
-    
-    for (int i = 0; i < fNumberOfVertices  ; i++)
-        
-    {
-        vector3D = aMatrix * Vector3D(fVertices[i]);
-        Vector2D vector2d = Vector2D(vector3D.x(),vector3D.y() );
-        Result.fVertices[i] = vector2d;
-
+Polygon Polygon::transform(const Matrix3x3& aMatrix) const noexcept {
+    Polygon lResult = *this;
+    for (int i = 0; i < fNumberOfVertices; i++) {
+        Vector3D lTransformedVertex = aMatrix * Vector3D(fVertices[i].x(), fVertices[i].y(), 1);
+        lResult.fVertices[i] = Vector2D(lTransformedVertex.x(), lTransformedVertex.y());
     }
-    
-    return Result;
-    
-    
+    return lResult;
 }
