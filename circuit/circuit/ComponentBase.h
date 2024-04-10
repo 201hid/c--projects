@@ -39,6 +39,7 @@ public:
 
     const std::string& getMajorUnit() const noexcept;
     const std::string& getMinorUnits() const noexcept;
+//    const std::string getMajorUnit() const noexcept;
 
     //
     // virtual member functions

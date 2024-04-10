@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		367AA5FF2BC0176F00B79E6E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 367AA5FE2BC0176F00B79E6E /* main.cpp */; };
+		367AA60A2BC0199B00B79E6E /* ComponentBaseAuxiliaries.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 367AA6092BC0199B00B79E6E /* ComponentBaseAuxiliaries.cpp */; };
+		367AA6102BC6A61A00B79E6E /* ComponentBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 367AA60E2BC6A61A00B79E6E /* ComponentBase.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +31,8 @@
 		367AA6062BC017EA00B79E6E /* Capacitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Capacitor.h; sourceTree = "<group>"; };
 		367AA6072BC017EA00B79E6E /* PassiveResistor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PassiveResistor.h; sourceTree = "<group>"; };
 		367AA6082BC017EA00B79E6E /* Inductor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Inductor.h; sourceTree = "<group>"; };
+		367AA6092BC0199B00B79E6E /* ComponentBaseAuxiliaries.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComponentBaseAuxiliaries.cpp; sourceTree = "<group>"; };
+		367AA60E2BC6A61A00B79E6E /* ComponentBase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ComponentBase.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +67,11 @@
 			children = (
 				367AA5FE2BC0176F00B79E6E /* main.cpp */,
 				367AA6062BC017EA00B79E6E /* Capacitor.h */,
+				367AA6092BC0199B00B79E6E /* ComponentBaseAuxiliaries.cpp */,
 				367AA6052BC017EA00B79E6E /* ComponentBase.h */,
 				367AA6082BC017EA00B79E6E /* Inductor.h */,
 				367AA6072BC017EA00B79E6E /* PassiveResistor.h */,
+				367AA60E2BC6A61A00B79E6E /* ComponentBase.cpp */,
 			);
 			path = circuit;
 			sourceTree = "<group>";
@@ -128,6 +134,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				367AA5FF2BC0176F00B79E6E /* main.cpp in Sources */,
+				367AA60A2BC0199B00B79E6E /* ComponentBaseAuxiliaries.cpp in Sources */,
+				367AA6102BC6A61A00B79E6E /* ComponentBase.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
