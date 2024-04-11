@@ -27,7 +27,7 @@ double ComponentBase:: getBaseValue() const noexcept
 
 void ComponentBase:: setBaseValue( double aBaseValue ) noexcept
 {
-    fBaseValue == aBaseValue;
+    fBaseValue = aBaseValue;
 }
 
  const std::string& ComponentBase ::  getMajorUnit() const noexcept
@@ -42,10 +42,24 @@ const std::string& ComponentBase ::  getMinorUnits() const noexcept
 
 double ComponentBase:: getPotentialAt( double aCurrent,
                        double aFrequency  ) const noexcept
-
+{
+    return aCurrent * getReactance(aFrequency);
+}
 
 double ComponentBase :: getCurrentAt( double aVoltage,
                      double aFrequency  ) const noexcept
 {
+    assert( aFrequency != 0);
     return aVoltage / getReactance(aFrequency);
 }
+
+ std::istream& operator>>( std::istream& aIStream, ComponentBase& aObject
+{
+    double lValue;
+    std::string lUnit;
+    
+    aIStream >>lValue>>lUnit;
+    
+    
+}
+
