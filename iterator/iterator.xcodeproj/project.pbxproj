@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		367AA5FF2BC0176F00B79E6E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 367AA5FE2BC0176F00B79E6E /* main.cpp */; };
-		367AA60A2BC0199B00B79E6E /* ComponentBaseAuxiliaries.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 367AA6092BC0199B00B79E6E /* ComponentBaseAuxiliaries.cpp */; };
-		367AA6102BC6A61A00B79E6E /* ComponentBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 367AA60E2BC6A61A00B79E6E /* ComponentBase.cpp */; };
-		36D735FC2BCF4FF400F81BE6 /* Iterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36D735FA2BCF4FF400F81BE6 /* Iterator.cpp */; };
+		36D7360A2BCF501300F81BE6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36D736092BCF501300F81BE6 /* main.cpp */; };
+		36D736142BCF530200F81BE6 /* FibonacciSequenceGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36D736122BCF530200F81BE6 /* FibonacciSequenceGenerator.cpp */; };
+		36D736172BCF538200F81BE6 /* FibonacciSequenceIterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36D736152BCF538200F81BE6 /* FibonacciSequenceIterator.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		367AA5F92BC0176F00B79E6E /* CopyFiles */ = {
+		36D736042BCF501300F81BE6 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -26,20 +25,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		367AA5FB2BC0176F00B79E6E /* circuit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = circuit; sourceTree = BUILT_PRODUCTS_DIR; };
-		367AA5FE2BC0176F00B79E6E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		367AA6052BC017EA00B79E6E /* ComponentBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComponentBase.h; sourceTree = "<group>"; };
-		367AA6062BC017EA00B79E6E /* Capacitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Capacitor.h; sourceTree = "<group>"; };
-		367AA6072BC017EA00B79E6E /* PassiveResistor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PassiveResistor.h; sourceTree = "<group>"; };
-		367AA6082BC017EA00B79E6E /* Inductor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Inductor.h; sourceTree = "<group>"; };
-		367AA6092BC0199B00B79E6E /* ComponentBaseAuxiliaries.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComponentBaseAuxiliaries.cpp; sourceTree = "<group>"; };
-		367AA60E2BC6A61A00B79E6E /* ComponentBase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ComponentBase.cpp; sourceTree = "<group>"; };
-		36D735FA2BCF4FF400F81BE6 /* Iterator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Iterator.cpp; sourceTree = "<group>"; };
-		36D735FB2BCF4FF400F81BE6 /* Iterator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Iterator.hpp; sourceTree = "<group>"; };
+		36D736062BCF501300F81BE6 /* iterator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = iterator; sourceTree = BUILT_PRODUCTS_DIR; };
+		36D736092BCF501300F81BE6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		36D736102BCF527F00F81BE6 /* FibonacciSequenceGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FibonacciSequenceGenerator.h; sourceTree = "<group>"; };
+		36D736112BCF527F00F81BE6 /* FibonacciSequenceIterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FibonacciSequenceIterator.h; sourceTree = "<group>"; };
+		36D736122BCF530200F81BE6 /* FibonacciSequenceGenerator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FibonacciSequenceGenerator.cpp; sourceTree = "<group>"; };
+		36D736152BCF538200F81BE6 /* FibonacciSequenceIterator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FibonacciSequenceIterator.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		367AA5F82BC0176F00B79E6E /* Frameworks */ = {
+		36D736032BCF501300F81BE6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,73 +44,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		367AA5F22BC0176F00B79E6E = {
+		36D735FD2BCF501300F81BE6 = {
 			isa = PBXGroup;
 			children = (
-				367AA5FD2BC0176F00B79E6E /* circuit */,
-				367AA5FC2BC0176F00B79E6E /* Products */,
+				36D736082BCF501300F81BE6 /* iterator */,
+				36D736072BCF501300F81BE6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		367AA5FC2BC0176F00B79E6E /* Products */ = {
+		36D736072BCF501300F81BE6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				367AA5FB2BC0176F00B79E6E /* circuit */,
+				36D736062BCF501300F81BE6 /* iterator */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		367AA5FD2BC0176F00B79E6E /* circuit */ = {
+		36D736082BCF501300F81BE6 /* iterator */ = {
 			isa = PBXGroup;
 			children = (
-				367AA5FE2BC0176F00B79E6E /* main.cpp */,
-				367AA6062BC017EA00B79E6E /* Capacitor.h */,
-				367AA6092BC0199B00B79E6E /* ComponentBaseAuxiliaries.cpp */,
-				36D735FA2BCF4FF400F81BE6 /* Iterator.cpp */,
-				36D735FB2BCF4FF400F81BE6 /* Iterator.hpp */,
-				367AA6052BC017EA00B79E6E /* ComponentBase.h */,
-				367AA6082BC017EA00B79E6E /* Inductor.h */,
-				367AA6072BC017EA00B79E6E /* PassiveResistor.h */,
-				367AA60E2BC6A61A00B79E6E /* ComponentBase.cpp */,
+				36D736102BCF527F00F81BE6 /* FibonacciSequenceGenerator.h */,
+				36D736122BCF530200F81BE6 /* FibonacciSequenceGenerator.cpp */,
+				36D736112BCF527F00F81BE6 /* FibonacciSequenceIterator.h */,
+				36D736152BCF538200F81BE6 /* FibonacciSequenceIterator.cpp */,
+				36D736092BCF501300F81BE6 /* main.cpp */,
 			);
-			path = circuit;
+			path = iterator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		367AA5FA2BC0176F00B79E6E /* circuit */ = {
+		36D736052BCF501300F81BE6 /* iterator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 367AA6022BC0176F00B79E6E /* Build configuration list for PBXNativeTarget "circuit" */;
+			buildConfigurationList = 36D7360D2BCF501300F81BE6 /* Build configuration list for PBXNativeTarget "iterator" */;
 			buildPhases = (
-				367AA5F72BC0176F00B79E6E /* Sources */,
-				367AA5F82BC0176F00B79E6E /* Frameworks */,
-				367AA5F92BC0176F00B79E6E /* CopyFiles */,
+				36D736022BCF501300F81BE6 /* Sources */,
+				36D736032BCF501300F81BE6 /* Frameworks */,
+				36D736042BCF501300F81BE6 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = circuit;
-			productName = circuit;
-			productReference = 367AA5FB2BC0176F00B79E6E /* circuit */;
+			name = iterator;
+			productName = iterator;
+			productReference = 36D736062BCF501300F81BE6 /* iterator */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		367AA5F32BC0176F00B79E6E /* Project object */ = {
+		36D735FE2BCF501300F81BE6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
-					367AA5FA2BC0176F00B79E6E = {
+					36D736052BCF501300F81BE6 = {
 						CreatedOnToolsVersion = 15.1;
 					};
 				};
 			};
-			buildConfigurationList = 367AA5F62BC0176F00B79E6E /* Build configuration list for PBXProject "circuit" */;
+			buildConfigurationList = 36D736012BCF501300F81BE6 /* Build configuration list for PBXProject "iterator" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -123,32 +114,31 @@
 				en,
 				Base,
 			);
-			mainGroup = 367AA5F22BC0176F00B79E6E;
-			productRefGroup = 367AA5FC2BC0176F00B79E6E /* Products */;
+			mainGroup = 36D735FD2BCF501300F81BE6;
+			productRefGroup = 36D736072BCF501300F81BE6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				367AA5FA2BC0176F00B79E6E /* circuit */,
+				36D736052BCF501300F81BE6 /* iterator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		367AA5F72BC0176F00B79E6E /* Sources */ = {
+		36D736022BCF501300F81BE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				367AA5FF2BC0176F00B79E6E /* main.cpp in Sources */,
-				367AA60A2BC0199B00B79E6E /* ComponentBaseAuxiliaries.cpp in Sources */,
-				367AA6102BC6A61A00B79E6E /* ComponentBase.cpp in Sources */,
-				36D735FC2BCF4FF400F81BE6 /* Iterator.cpp in Sources */,
+				36D7360A2BCF501300F81BE6 /* main.cpp in Sources */,
+				36D736142BCF530200F81BE6 /* FibonacciSequenceGenerator.cpp in Sources */,
+				36D736172BCF538200F81BE6 /* FibonacciSequenceIterator.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		367AA6002BC0176F00B79E6E /* Debug */ = {
+		36D7360B2BCF501300F81BE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -209,7 +199,7 @@
 			};
 			name = Debug;
 		};
-		367AA6012BC0176F00B79E6E /* Release */ = {
+		36D7360C2BCF501300F81BE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -263,7 +253,7 @@
 			};
 			name = Release;
 		};
-		367AA6032BC0176F00B79E6E /* Debug */ = {
+		36D7360E2BCF501300F81BE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -271,7 +261,7 @@
 			};
 			name = Debug;
 		};
-		367AA6042BC0176F00B79E6E /* Release */ = {
+		36D7360F2BCF501300F81BE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -282,25 +272,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		367AA5F62BC0176F00B79E6E /* Build configuration list for PBXProject "circuit" */ = {
+		36D736012BCF501300F81BE6 /* Build configuration list for PBXProject "iterator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				367AA6002BC0176F00B79E6E /* Debug */,
-				367AA6012BC0176F00B79E6E /* Release */,
+				36D7360B2BCF501300F81BE6 /* Debug */,
+				36D7360C2BCF501300F81BE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		367AA6022BC0176F00B79E6E /* Build configuration list for PBXNativeTarget "circuit" */ = {
+		36D7360D2BCF501300F81BE6 /* Build configuration list for PBXNativeTarget "iterator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				367AA6032BC0176F00B79E6E /* Debug */,
-				367AA6042BC0176F00B79E6E /* Release */,
+				36D7360E2BCF501300F81BE6 /* Debug */,
+				36D7360F2BCF501300F81BE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 367AA5F32BC0176F00B79E6E /* Project object */;
+	rootObject = 36D735FE2BCF501300F81BE6 /* Project object */;
 }

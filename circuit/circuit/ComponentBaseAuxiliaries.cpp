@@ -1,4 +1,50 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // COS30008, Tutorial 4, 2024
 
 #include "ComponentBase.h"
@@ -72,3 +118,4 @@ void ComponentBase::setBaseValue( double aValue, const std::string& aUnit ) noex
 
     setBaseValue( lRawValue * lMultiplier );
 }
+
