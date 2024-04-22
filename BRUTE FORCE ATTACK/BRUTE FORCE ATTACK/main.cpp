@@ -46,6 +46,7 @@ int main() {
     // Initialize variables to count the number of password guess attempts and to check if the password has been found.
     int attempts = 0;
     bool found = false;
+    
     // Start with the first character of 'characters' for each character of the password length to initialize guesses.
     std::string currentGuess(password.length(), characters[0]);
 
