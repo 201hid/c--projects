@@ -55,7 +55,7 @@ int main() {
 
     // If the password was not found after all possible combinations, inform the user.
     if (!found) {
-        std::cout << "Password not found after " << attempts << " attempts." << std::endl;
+        std::cout << "Password not found after " << attempts << " attempt." << std::endl;
     }
 
     return 0;
