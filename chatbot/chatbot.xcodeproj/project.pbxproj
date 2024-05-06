@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36228F6B2BE908ED0061CC0A /* chatbot for database.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36228F692BE908ED0061CC0A /* chatbot for database.cpp */; };
-		36D736252BD3D72500F81BE6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36D736242BD3D72500F81BE6 /* main.cpp */; };
+		36228FE72BE90C730061CC0A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36228FE62BE90C730061CC0A /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		36D7361F2BD3D72500F81BE6 /* CopyFiles */ = {
+		36228FE12BE90C730061CC0A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,14 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		36228F692BE908ED0061CC0A /* chatbot for database.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "chatbot for database.cpp"; path = "../chatbot for database.cpp"; sourceTree = "<group>"; };
-		36228F6A2BE908ED0061CC0A /* chatbot for database.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = "chatbot for database.hpp"; path = "../chatbot for database.hpp"; sourceTree = "<group>"; };
-		36D736212BD3D72500F81BE6 /* BRUTE FORCE ATTACK */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "BRUTE FORCE ATTACK"; sourceTree = BUILT_PRODUCTS_DIR; };
-		36D736242BD3D72500F81BE6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		36228FE32BE90C730061CC0A /* chatbot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = chatbot; sourceTree = BUILT_PRODUCTS_DIR; };
+		36228FE62BE90C730061CC0A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		36D7361E2BD3D72500F81BE6 /* Frameworks */ = {
+		36228FE02BE90C730061CC0A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,67 +38,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		36D736182BD3D72400F81BE6 = {
+		36228FDA2BE90C730061CC0A = {
 			isa = PBXGroup;
 			children = (
-				36228F692BE908ED0061CC0A /* chatbot for database.cpp */,
-				36228F6A2BE908ED0061CC0A /* chatbot for database.hpp */,
-				36D736232BD3D72500F81BE6 /* BRUTE FORCE ATTACK */,
-				36D736222BD3D72500F81BE6 /* Products */,
+				36228FE52BE90C730061CC0A /* chatbot */,
+				36228FE42BE90C730061CC0A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		36D736222BD3D72500F81BE6 /* Products */ = {
+		36228FE42BE90C730061CC0A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				36D736212BD3D72500F81BE6 /* BRUTE FORCE ATTACK */,
+				36228FE32BE90C730061CC0A /* chatbot */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		36D736232BD3D72500F81BE6 /* BRUTE FORCE ATTACK */ = {
+		36228FE52BE90C730061CC0A /* chatbot */ = {
 			isa = PBXGroup;
 			children = (
-				36D736242BD3D72500F81BE6 /* main.cpp */,
+				36228FE62BE90C730061CC0A /* main.cpp */,
 			);
-			path = "BRUTE FORCE ATTACK";
+			path = chatbot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		36D736202BD3D72500F81BE6 /* BRUTE FORCE ATTACK */ = {
+		36228FE22BE90C730061CC0A /* chatbot */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36D736282BD3D72500F81BE6 /* Build configuration list for PBXNativeTarget "BRUTE FORCE ATTACK" */;
+			buildConfigurationList = 36228FEA2BE90C730061CC0A /* Build configuration list for PBXNativeTarget "chatbot" */;
 			buildPhases = (
-				36D7361D2BD3D72500F81BE6 /* Sources */,
-				36D7361E2BD3D72500F81BE6 /* Frameworks */,
-				36D7361F2BD3D72500F81BE6 /* CopyFiles */,
+				36228FDF2BE90C730061CC0A /* Sources */,
+				36228FE02BE90C730061CC0A /* Frameworks */,
+				36228FE12BE90C730061CC0A /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "BRUTE FORCE ATTACK";
-			productName = "BRUTE FORCE ATTACK";
-			productReference = 36D736212BD3D72500F81BE6 /* BRUTE FORCE ATTACK */;
+			name = chatbot;
+			productName = chatbot;
+			productReference = 36228FE32BE90C730061CC0A /* chatbot */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		36D736192BD3D72400F81BE6 /* Project object */ = {
+		36228FDB2BE90C730061CC0A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
-					36D736202BD3D72500F81BE6 = {
+					36228FE22BE90C730061CC0A = {
 						CreatedOnToolsVersion = 15.1;
 					};
 				};
 			};
-			buildConfigurationList = 36D7361C2BD3D72400F81BE6 /* Build configuration list for PBXProject "BRUTE FORCE ATTACK" */;
+			buildConfigurationList = 36228FDE2BE90C730061CC0A /* Build configuration list for PBXProject "chatbot" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,30 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 36D736182BD3D72400F81BE6;
-			productRefGroup = 36D736222BD3D72500F81BE6 /* Products */;
+			mainGroup = 36228FDA2BE90C730061CC0A;
+			productRefGroup = 36228FE42BE90C730061CC0A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				36D736202BD3D72500F81BE6 /* BRUTE FORCE ATTACK */,
+				36228FE22BE90C730061CC0A /* chatbot */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		36D7361D2BD3D72500F81BE6 /* Sources */ = {
+		36228FDF2BE90C730061CC0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36228F6B2BE908ED0061CC0A /* chatbot for database.cpp in Sources */,
-				36D736252BD3D72500F81BE6 /* main.cpp in Sources */,
+				36228FE72BE90C730061CC0A /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		36D736262BD3D72500F81BE6 /* Debug */ = {
+		36228FE82BE90C730061CC0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -193,7 +187,7 @@
 			};
 			name = Debug;
 		};
-		36D736272BD3D72500F81BE6 /* Release */ = {
+		36228FE92BE90C730061CC0A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -247,44 +241,46 @@
 			};
 			name = Release;
 		};
-		36D736292BD3D72500F81BE6 /* Debug */ = {
+		36228FEB2BE90C730061CC0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = "\"/Users/201hid/Desktop/c--projects/chatbot/vcpkg/installed/arm64-osx/include\"";
 			};
 			name = Debug;
 		};
-		36D7362A2BD3D72500F81BE6 /* Release */ = {
+		36228FEC2BE90C730061CC0A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = "\"/Users/201hid/Desktop/c--projects/chatbot/vcpkg/installed/arm64-osx/include\"";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		36D7361C2BD3D72400F81BE6 /* Build configuration list for PBXProject "BRUTE FORCE ATTACK" */ = {
+		36228FDE2BE90C730061CC0A /* Build configuration list for PBXProject "chatbot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				36D736262BD3D72500F81BE6 /* Debug */,
-				36D736272BD3D72500F81BE6 /* Release */,
+				36228FE82BE90C730061CC0A /* Debug */,
+				36228FE92BE90C730061CC0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36D736282BD3D72500F81BE6 /* Build configuration list for PBXNativeTarget "BRUTE FORCE ATTACK" */ = {
+		36228FEA2BE90C730061CC0A /* Build configuration list for PBXNativeTarget "chatbot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				36D736292BD3D72500F81BE6 /* Debug */,
-				36D7362A2BD3D72500F81BE6 /* Release */,
+				36228FEB2BE90C730061CC0A /* Debug */,
+				36228FEC2BE90C730061CC0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 36D736192BD3D72400F81BE6 /* Project object */;
+	rootObject = 36228FDB2BE90C730061CC0A /* Project object */;
 }
