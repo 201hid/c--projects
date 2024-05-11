@@ -5,19 +5,19 @@
 #include <cpprest/http_client.h>
 
 using namespace std;
-using json = nlohmann::json;
+// using json = nlohmann::json; // Removed to avoid global namespace pollution
 using namespace web;
 using namespace web::http;
 using namespace web::http::client;
 
 // Function to read JSON data from file
-json readJsonFromFile(const string& filename) {
+nlohmann::json readJsonFromFile(const string& filename) {
     ifstream file(filename);
     if (!file.is_open()) {
         cerr << "Error opening file: " << filename << endl;
         exit(1);
     }
-    json j;
+    nlohmann::json j;
     file >> j;
     file.close();
     return j;
@@ -32,7 +32,7 @@ string askGPT(const string& question, const string& apiKey) {
     http_request request(methods::POST);
     request.headers().add("Authorization", "Bearer " + apiKey);
     request.headers().set_content_type("application/json");
-    json requestBody = {
+    nlohmann::json requestBody = {
         {"prompt", question},
         {"max_tokens", 50}
     };
@@ -47,7 +47,7 @@ string askGPT(const string& question, const string& apiKey) {
 
 int main() {
     // Read JSON data from file
-    json transactionData = readJsonFromFile("transaction_data.json");
+    nlohmann::json transactionData = readJsonFromFile("transaction_data.json");
 
     // Ask questions and get answers
     string apiKey = "YOUR_API_KEY"; // Replace with your OpenAI API key

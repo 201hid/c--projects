@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36228FE72BE90C730061CC0A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36228FE62BE90C730061CC0A /* main.cpp */; };
+		368CAB8E2BEDFC0B00D33C12 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 368CAB8D2BEDFC0B00D33C12 /* main.cpp */; };
+		368CAB982BEDFC7E00D33C12 /* ofstream12.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 368CAB972BEDFC7E00D33C12 /* ofstream12.cpp */; };
+		368CAB9B2BEE0B3D00D33C12 /* ifstream12.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 368CAB992BEE0B3D00D33C12 /* ifstream12.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		36228FE12BE90C730061CC0A /* CopyFiles */ = {
+		368CAB882BEDFC0B00D33C12 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +25,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		36228FE32BE90C730061CC0A /* chatbot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = chatbot; sourceTree = BUILT_PRODUCTS_DIR; };
-		36228FE62BE90C730061CC0A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		366DDB302BEE195400B5DC86 /* sample.lzw */ = {isa = PBXFileReference; lastKnownFileType = text; name = sample.lzw; path = ../../../../Downloads/sample.lzw; sourceTree = "<group>"; };
+		368CAB8A2BEDFC0B00D33C12 /* ds3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ds3; sourceTree = BUILT_PRODUCTS_DIR; };
+		368CAB8D2BEDFC0B00D33C12 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		368CAB942BEDFC7E00D33C12 /* ifstream12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ifstream12.h; sourceTree = "<group>"; };
+		368CAB962BEDFC7E00D33C12 /* ofstream12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofstream12.h; sourceTree = "<group>"; };
+		368CAB972BEDFC7E00D33C12 /* ofstream12.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofstream12.cpp; sourceTree = "<group>"; };
+		368CAB992BEE0B3D00D33C12 /* ifstream12.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ifstream12.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		36228FE02BE90C730061CC0A /* Frameworks */ = {
+		368CAB872BEDFC0B00D33C12 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,65 +45,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		36228FDA2BE90C730061CC0A = {
+		368CAB812BEDFC0B00D33C12 = {
 			isa = PBXGroup;
 			children = (
-				36228FE52BE90C730061CC0A /* chatbot */,
-				36228FE42BE90C730061CC0A /* Products */,
+				368CAB8C2BEDFC0B00D33C12 /* ds3 */,
+				368CAB8B2BEDFC0B00D33C12 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		36228FE42BE90C730061CC0A /* Products */ = {
+		368CAB8B2BEDFC0B00D33C12 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				36228FE32BE90C730061CC0A /* chatbot */,
+				368CAB8A2BEDFC0B00D33C12 /* ds3 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		36228FE52BE90C730061CC0A /* chatbot */ = {
+		368CAB8C2BEDFC0B00D33C12 /* ds3 */ = {
 			isa = PBXGroup;
 			children = (
-				36228FE62BE90C730061CC0A /* main.cpp */,
+				368CAB8D2BEDFC0B00D33C12 /* main.cpp */,
+				366DDB302BEE195400B5DC86 /* sample.lzw */,
+				368CAB942BEDFC7E00D33C12 /* ifstream12.h */,
+				368CAB992BEE0B3D00D33C12 /* ifstream12.cpp */,
+				368CAB972BEDFC7E00D33C12 /* ofstream12.cpp */,
+				368CAB962BEDFC7E00D33C12 /* ofstream12.h */,
 			);
-			path = chatbot;
+			path = ds3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		36228FE22BE90C730061CC0A /* chatbot */ = {
+		368CAB892BEDFC0B00D33C12 /* ds3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36228FEA2BE90C730061CC0A /* Build configuration list for PBXNativeTarget "chatbot" */;
+			buildConfigurationList = 368CAB912BEDFC0B00D33C12 /* Build configuration list for PBXNativeTarget "ds3" */;
 			buildPhases = (
-				36228FDF2BE90C730061CC0A /* Sources */,
-				36228FE02BE90C730061CC0A /* Frameworks */,
-				36228FE12BE90C730061CC0A /* CopyFiles */,
+				368CAB862BEDFC0B00D33C12 /* Sources */,
+				368CAB872BEDFC0B00D33C12 /* Frameworks */,
+				368CAB882BEDFC0B00D33C12 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = chatbot;
-			productName = chatbot;
-			productReference = 36228FE32BE90C730061CC0A /* chatbot */;
+			name = ds3;
+			productName = ds3;
+			productReference = 368CAB8A2BEDFC0B00D33C12 /* ds3 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		36228FDB2BE90C730061CC0A /* Project object */ = {
+		368CAB822BEDFC0B00D33C12 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
-					36228FE22BE90C730061CC0A = {
+					368CAB892BEDFC0B00D33C12 = {
 						CreatedOnToolsVersion = 15.1;
 					};
 				};
 			};
-			buildConfigurationList = 36228FDE2BE90C730061CC0A /* Build configuration list for PBXProject "chatbot" */;
+			buildConfigurationList = 368CAB852BEDFC0B00D33C12 /* Build configuration list for PBXProject "ds3" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,29 +116,31 @@
 				en,
 				Base,
 			);
-			mainGroup = 36228FDA2BE90C730061CC0A;
-			productRefGroup = 36228FE42BE90C730061CC0A /* Products */;
+			mainGroup = 368CAB812BEDFC0B00D33C12;
+			productRefGroup = 368CAB8B2BEDFC0B00D33C12 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				36228FE22BE90C730061CC0A /* chatbot */,
+				368CAB892BEDFC0B00D33C12 /* ds3 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		36228FDF2BE90C730061CC0A /* Sources */ = {
+		368CAB862BEDFC0B00D33C12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36228FE72BE90C730061CC0A /* main.cpp in Sources */,
+				368CAB8E2BEDFC0B00D33C12 /* main.cpp in Sources */,
+				368CAB9B2BEE0B3D00D33C12 /* ifstream12.cpp in Sources */,
+				368CAB982BEDFC7E00D33C12 /* ofstream12.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		36228FE82BE90C730061CC0A /* Debug */ = {
+		368CAB8F2BEDFC0B00D33C12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -187,7 +201,7 @@
 			};
 			name = Debug;
 		};
-		36228FE92BE90C730061CC0A /* Release */ = {
+		368CAB902BEDFC0B00D33C12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -241,53 +255,44 @@
 			};
 			name = Release;
 		};
-		36228FEB2BE90C730061CC0A /* Debug */ = {
+		368CAB922BEDFC0B00D33C12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = "/Users/201hid/Desktop/c--projects/chatbot/vcpkg/installed/arm64-osx/include";
-				LIBRARY_SEARCH_PATHS = "/Users/201hid/Desktop/c--projects/chatbot/vcpkg/installed/arm64-osx/lib";
-				OTHER_LDFLAGS = "\"-lcpprest -lboost_system -lssl -lcrypto\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SYSTEM_HEADER_SEARCH_PATHS = "\"/Users/201hid/Desktop/c--projects/chatbot/vcpkg/installed/arm64-osx/include\"";
 			};
 			name = Debug;
 		};
-		36228FEC2BE90C730061CC0A /* Release */ = {
+		368CAB932BEDFC0B00D33C12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = "/Users/201hid/Desktop/c--projects/chatbot/vcpkg/installed/arm64-osx/include";
-				LIBRARY_SEARCH_PATHS = "/Users/201hid/Desktop/c--projects/chatbot/vcpkg/installed/arm64-osx/lib";
-				OTHER_LDFLAGS = "\"-lcpprest -lboost_system -lssl -lcrypto\"";
-				"OTHER_LDFLAGS[arch=*]" = "\"-lcpprest -lboost_system -lssl -lcrypto\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SYSTEM_HEADER_SEARCH_PATHS = "\"/Users/201hid/Desktop/c--projects/chatbot/vcpkg/installed/arm64-osx/include\"";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		36228FDE2BE90C730061CC0A /* Build configuration list for PBXProject "chatbot" */ = {
+		368CAB852BEDFC0B00D33C12 /* Build configuration list for PBXProject "ds3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				36228FE82BE90C730061CC0A /* Debug */,
-				36228FE92BE90C730061CC0A /* Release */,
+				368CAB8F2BEDFC0B00D33C12 /* Debug */,
+				368CAB902BEDFC0B00D33C12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36228FEA2BE90C730061CC0A /* Build configuration list for PBXNativeTarget "chatbot" */ = {
+		368CAB912BEDFC0B00D33C12 /* Build configuration list for PBXNativeTarget "ds3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				36228FEB2BE90C730061CC0A /* Debug */,
-				36228FEC2BE90C730061CC0A /* Release */,
+				368CAB922BEDFC0B00D33C12 /* Debug */,
+				368CAB932BEDFC0B00D33C12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 36228FDB2BE90C730061CC0A /* Project object */;
+	rootObject = 368CAB822BEDFC0B00D33C12 /* Project object */;
 }
